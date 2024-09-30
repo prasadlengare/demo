@@ -1,0 +1,128 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: yourname
+      changes:
+        - createTable:
+            tableName: example_table
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: name
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: created_at
+                  type: TIMESTAMP
+                  defaultValueComputed: CURRENT_TIMESTAMP
+
+  - changeSet:
+      id: 2
+      author: yourname
+      changes:
+        - insert:
+            tableName: example_table
+            columns:
+              - column:
+                  name: name
+                  value: 'John Doe'
+              - column:
+                  name: created_at
+                  valueDate: 2023-01-01T00:00:00
+
+        - insert:
+            tableName: example_table
+            columns:
+              - column:
+                  name: name
+                  value: 'Jane Smith'
+              - column:
+                  name: created_at
+                  valueDate: 2023-01-02T00:00:00
+
+        - insert:
+            tableName: example_table
+            columns:
+              - column:
+                  name: name
+                  value: 'Alice Johnson'
+              - column:
+                  name: created_at
+                  valueDate: 2023-01-03T00:00:00
+
+        - insert:
+            tableName: example_table
+            columns:
+              - column:
+                  name: name
+                  value: 'Bob Brown'
+              - column:
+                  name: created_at
+                  valueDate: 2023-01-04T00:00:00
+
+        - insert:
+            tableName: example_table
+            columns:
+              - column:
+                  name: name
+                  value: 'Charlie Black'
+              - column:
+                  name: created_at
+                  valueDate: 2023-01-05T00:00:00
+
+        - insert:
+            tableName: example_table
+            columns:
+              - column:
+                  name: name
+                  value: 'David White'
+              - column:
+                  name: created_at
+                  valueDate: 2023-01-06T00:00:00
+
+        - insert:
+            tableName: example_table
+            columns:
+              - column:
+                  name: name
+                  value: 'Emily Green'
+              - column:
+                  name: created_at
+                  valueDate: 2023-01-07T00:00:00
+
+        - insert:
+            tableName: example_table
+            columns:
+              - column:
+                  name: name
+                  value: 'Frank Blue'
+              - column:
+                  name: created_at
+                  valueDate: 2023-01-08T00:00:00
+
+        - insert:
+            tableName: example_table
+            columns:
+              - column:
+                  name: name
+                  value: 'Grace Yellow'
+              - column:
+                  name: created_at
+                  valueDate: 2023-01-09T00:00:00
+
+        - insert:
+            tableName: example_table
+            columns:
+              - column:
+                  name: name
+                  value: 'Hank Red'
+              - column:
+                  name: created_at
+                  valueDate: 2023-01-10T00:00:00
